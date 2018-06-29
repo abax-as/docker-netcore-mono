@@ -6,3 +6,5 @@ RUN echo "deb http://download.mono-project.com/repo/debian stable-stretch main" 
   && apt-get update \
   && apt-get install -y mono-devel \
   && rm -rf /var/lib/apt/lists/* /tmp/*
+
+ENV FrameworkPathOverride=/usr/lib/mono/4.6.1-api/
